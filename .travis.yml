@@ -47,7 +47,8 @@ script:
   - |
     CC=gcc-6 CXX=g++-6 ./configure --enable-jack
     make
-  - |
-    CC=gcc-6 CXX=g++-6 ./configure --enable-alsa --enable-jack --enable-vlc
+    CC=gcc-6 CXX=g++-6 ./configure --enable-ffmpeg
     make
-
+  - |
+    CC=gcc-6 CXX=g++-6 ./configure --enable-alsa --enable-jack --enable-vlc --enable-ffmpeg
+    make
